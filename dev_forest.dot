@@ -1,8 +1,26 @@
 digraph forest {
+	
+	style="rounded,filled"
+
+	{
+		node [shape="box", style="rounded,filled", fixedsize=true, width=3, height=0.5, fontname="Futura", fontsize=10]
+		root
+		principle
+		network
+		storage
+		file
+		cache
+
+		a_slight_dive_into_too_many_open_files [label = "关于too many open files的一点深究" URL="http://changjixiong.com/a-slight-dive-into-too-many-open-files/"]
+	}
+
 	root -> principle
 	principle ->network
 	principle ->storage
 
 	storage->file
 	storage->cache
+
+	file -> a_slight_dive_into_too_many_open_files
+
 }
