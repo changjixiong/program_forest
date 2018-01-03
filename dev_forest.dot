@@ -11,10 +11,17 @@ digraph forest {
 		file
 		cache
 
-		a_slight_dive_into_too_many_open_files [label = "关于too many open files的一点深究" URL="https://github.com/changjixiong/dev_forest/blob/master/root/principle/storage/file/a_slight_dive_into_too_many_open_files.md"]
+		a_slight_dive_into_too_many_open_files [label = "关于too many open files的一点深究" URL="https://github.com/changjixiong/program_forest/blob/master/root/principle/storage/file/a_slight_dive_into_too_many_open_files.md"]
+		start-a-consul [label = "启动consul" URL="https://github.com/changjixiong/program_forest/blob/master/root/engineering/infrastructure/start-a-consul.md"]
+		start-a-nsq [label = "启动nsq" URL="https://github.com/changjixiong/program_forest/blob/master/root/engineering/infrastructure/start-a-nsq.md"]
+
 	}
 
 	root -> principle
+	root -> engineering
+
+	engineering -> infrastructure
+
 	principle ->network
 	principle ->storage
 
