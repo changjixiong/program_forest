@@ -14,9 +14,11 @@ digraph forest {
 		infrastructure
 
 		a_slight_dive_into_too_many_open_files [label = "关于too many open files的一点深究" URL="https://github.com/changjixiong/program_forest/blob/master/root/principle/storage/file/a_slight_dive_into_too_many_open_files.md"]
-	
+		fd_openfiletable_and_inode [label = "文件描述符、打开文件表以及inode" URL="https://github.com/changjixiong/program_forest/blob/master/root/principle/storage/file/fd_openfiletable_and_inode.md"]
+
 		start_a_consul [label = "启动consul" URL="https://github.com/changjixiong/program_forest/blob/master/root/engineering/infrastructure/start-a-consul.md"]
 		start_a_nsq [label = "启动nsq" URL="https://github.com/changjixiong/program_forest/blob/master/root/engineering/infrastructure/start-a-nsq.md"]
+
 
 	}
 
@@ -34,6 +36,8 @@ digraph forest {
 
 	infrastructure -> start_a_consul
 	infrastructure -> start_a_nsq
+
 	file -> a_slight_dive_into_too_many_open_files
+	file -> fd_openfiletable_and_inode
 
 }
