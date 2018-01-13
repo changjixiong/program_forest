@@ -18,6 +18,7 @@ digraph forest {
 
 		start_a_consul [label = "启动consul" URL="https://github.com/changjixiong/program_forest/blob/master/root/engineering/infrastructure/start-a-consul.md"]
 		start_a_nsq [label = "启动nsq" URL="https://github.com/changjixiong/program_forest/blob/master/root/engineering/infrastructure/start-a-nsq.md"]
+		a_example_of_grpc_go [label = "grpc-go例子" URL="https://github.com/changjixiong/program_forest/blob/master/root/engineering/infrastructure/a_example_of_grpc_go.md"]
 
 
 	}
@@ -36,6 +37,7 @@ digraph forest {
 
 	infrastructure -> start_a_consul
 	infrastructure -> start_a_nsq
+	infrastructure -> a_example_of_grpc_go
 
 	file -> a_slight_dive_into_too_many_open_files
 	file -> fd_openfiletable_and_inode
