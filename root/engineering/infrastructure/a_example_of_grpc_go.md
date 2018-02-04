@@ -1,4 +1,4 @@
-# a example of gRPC-go
+# 一个gRPC-go范例程序
 
 grpc-go的介绍：
 
