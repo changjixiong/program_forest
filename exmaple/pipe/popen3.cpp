@@ -13,6 +13,7 @@ int main(){
 		// read untill eof
 		while(chars_read>0){
 			// this is a trick, set a \0 as a string end
+			// but it seem "-1" is not need
 			buffer[chars_read-1]='\0';
 			printf("read %d:-\n%s\n", BUFSIZ, buffer);
 			chars_read = fread(buffer, sizeof(char), BUFSIZ, read_fp);
